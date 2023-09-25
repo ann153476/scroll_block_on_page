@@ -1,0 +1,36 @@
+.scrollable-div {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #e60909;
+  margin: auto;
+  overflow: auto; /* Додайте прокрутку, коли контент перевищує висоту або ширину */
+}
+/* Стилі для полоси прокрутки */
+.scrollable-div::-webkit-scrollbar {
+  width: 12px; /* Ширина полоси прокрутки */
+}
+
+/* Стилі для "пальця" полоси прокрутки */
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-color: #da75bc; /* Колір "пальця" */
+  border-radius: 6px; /* Закруглені кути "пальця" */
+  border: 2px solid #2d2a7e; /* Обрамлення "пальця" */
+}
+
+/* Опціональні стилі для прихованої частини полоси прокрутки */
+.scrollable-div::-webkit-scrollbar-track {
+  background-color: #e1ec69; /* Колір фону */
+}
+/*  */
+.scrollable-none {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #092ee6;
+  margin: auto;
+  overflow: auto;
+}
+.scrollable-none::-webkit-scrollbar,
+.scrollable-none::-webkit-scrollbar-thumb,
+.scrollable-none::-webkit-scrollbar-track {
+  display: none;
+}
